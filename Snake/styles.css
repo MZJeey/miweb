@@ -1,46 +1,56 @@
-* {
-    font-family: 'Share Tech Mono', monospace;
-}
-#board, .boardInfo{
-    max-width: 500px;
-
-}
-#board{
+/* Estilos para el tablero */
+#board {
     display: grid;
-    grid-template-columns: repeat(10,1rfr);
-}
-#star, .boardInfo{
-    font-family: 25px;
-}
-#gameOver{
-    display: none;
-}
-.boardInfo{
-    display: flex;
-    justify-content: space-between;
-margin-top: 10px;
-}
-
-#start{
-    background-color: #f35a69 ;
-    border:none;
-    color: white;
-
-}
-#scoreBoard{
-    display: inline-flex;
-
-}
-.square{
-    aspect-ratio: 1;
-}
-.emptySquare{
-    background-color: #456990;
-}
-.snakeSquare{
-    background-color: #ccf47f;
-    padding: center;
-}
-.floodSquare{
-    background-color: #f35a69;
-}
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para las casillas */
+  .square {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .snakeSquare {
+    background-color: #00ff00;
+  }
+  
+  .foodSquare {
+    background-color: #ff0000;
+  }
+  
+  .emptySquare {
+    background-color: #fff;
+  }
+  
+  /* Estilos para el marcador */
+  #scoreBoard {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el botón de inicio */
+  #start {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #start:hover {
+    background-color: #3e8e41;
+  }
